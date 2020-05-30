@@ -41,7 +41,7 @@ Double lat,lng;
         mapFragment.getMapAsync(this);
         lat=getIntent().getExtras().getDouble("lat");
         lng=getIntent().getExtras().getDouble("lng");
-        //testing git
+        //testing git push
 
         getCompleteAddressString(lat,lng);
 
