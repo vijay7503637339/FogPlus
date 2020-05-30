@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CRM">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="back"
+            android:src="@drawable/left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="35dp"
+            android:fontFamily="@font/baskerville"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="CRM"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textSize="22sp"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/squareback"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="7dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/todaylead"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baskerville"
+                    android:gravity="center"
+                    android:text="Today's Lead"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/squareback"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="7dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/followuplead"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baskerville"
+                    android:gravity="center"
+                    android:text="Job Card"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/squareback"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="7dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/missedlead"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baskerville"
+                    android:gravity="center"
+                    android:text="Missed Leads"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/squareback"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="7dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/conversation"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baskerville"
+                    android:gravity="center"
+                    android:text="Conversation"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

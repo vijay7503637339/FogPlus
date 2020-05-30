@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppIntroFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+             android:text="Three Wheeler Services "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/gif1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+
+            android:text="The auto   is   form   urban transport, both as a vehicle for hire and for private use, in many countries around the world, especially those with tropical or subtropical climates, including many developing countries."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</FrameLayout>

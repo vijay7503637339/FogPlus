@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome..."
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/baskerville"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baskerville"
+        android:hint="Your@gmail.com"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="******"
+        android:fontFamily="@font/baskerville"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:text="Forgot Password ?"
+    android:fontFamily="@font/baskerville"
+    android:onClick="forgotpass"
+    android:textSize="18sp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/baskerville"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="dashboard"
+        android:text="Login"
+        android:textColor="@color/white"/>
+
+
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:text="google sign "
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/googleloginbtn"
+        android:id="@+id/sign_in_button"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="New User ? Signup"
+        android:fontFamily="@font/baskerville"
+        android:textSize="23sp"
+        android:onClick="signup"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/login_with_truecaller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terms"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btnback"
+        android:drawableLeft="@drawable/com_truecaller_icon"
+        android:padding="8dp"
+        android:text="Sign in With TrueCaller"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp" />
+</LinearLayout>

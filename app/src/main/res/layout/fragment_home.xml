@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/blackblack" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tendp"
+            android:layout_marginTop="@dimen/tendp"
+             android:text="Our Services"
+            android:fontFamily="@font/baskerville"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginLeft="@dimen/thirtydp"
+             android:layout_marginRight="@dimen/thirtydp"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/myAppointment"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/book"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Book Appointment"
+                        android:gravity="center"
+                        android:fontFamily="@font/baskerville"
+                         android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+
+                   />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/orderhistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+
+                        android:src="@drawable/orderhistory"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order History"
+                        android:fontFamily="@font/baskerville"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                         />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirtydp"
+            android:layout_marginRight="@dimen/thirtydp"
+            android:layout_marginTop="@dimen/ten"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/AddVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/addvehicle"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add vehicle"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+
+                        android:fontFamily="@font/baskerville"
+                        android:textColor="@color/colorPrimaryDark"
+                         android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/MyVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/vehiclelist"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="My Vehicles "
+                        android:gravity="center"
+                        android:fontFamily="@font/baskerville"
+
+                        android:textColor="@color/colorPrimaryDark"
+                         android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
